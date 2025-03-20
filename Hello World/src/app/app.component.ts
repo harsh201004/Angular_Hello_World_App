@@ -6,11 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title: string = "Welcome to BridgeLabz";
-  imgUrl: string = "https://www.bridgelabz.com/assets/images/BridgeLabz%20New%20Logo.svg";
-  userClickMessage: string = "";
-
-  onButtonClick(): void {
-    this.userClickMessage = "Button clicked! Event Binding works!";
-  }
+  title: string = "Two-Way Data Binding Example";
+  userName: string = ""; // Variable for binding
 }
