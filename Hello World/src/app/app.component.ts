@@ -7,5 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title: string = "Welcome to BridgeLabz";
-  imgUrl: string = "https://www.bridgelabz.com/assets/images/BridgeLabz%20New%20Logo.svg"; // Image URL
+  imgUrl: string = "https://www.bridgelabz.com/assets/images/BridgeLabz%20New%20Logo.svg";
+  userClickMessage: string = "";
+
+  onButtonClick(): void {
+    this.userClickMessage = "Button clicked! Event Binding works!";
+  }
 }
