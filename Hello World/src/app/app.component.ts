@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title: string = "Hello from BridgeLabz"; // Define title property
+  title: string = "Welcome to BridgeLabz";
+  imgUrl: string = "https://www.bridgelabz.com/assets/images/BridgeLabz%20New%20Logo.svg"; // Image URL
 }
