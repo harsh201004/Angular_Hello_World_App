@@ -1,7 +1,10 @@
 <h1>{{ title }}</h1>
 
-<!-- Input field with two-way data binding -->
-<input type="text" [(ngModel)]="userName" placeholder="Enter your name">
+<!-- Input field with event binding -->
+<input type="text" (input)="onInputChange($event)" placeholder="Enter text">
 
-<!-- Display the entered name -->
-<p>Hello, {{ userName }}!</p>
+<!-- Display user input -->
+<p>You entered: {{ userInput }}</p>
+
+<!-- Display validation message -->
+<p *ngIf="validationMessage" style="color: red;">{{ validationMessage }}</p>

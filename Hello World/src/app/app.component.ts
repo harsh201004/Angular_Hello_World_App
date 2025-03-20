@@ -6,6 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title: string = "Two-Way Data Binding Example";
-  userName: string = ""; // Variable for binding
+  title: string = "Input Event Binding with Validation";
+  userInput: string = "";
+  validationMessage: string = "";
+
+  onInputChange(event: Event): void {
+    const input = (event.target as HTMLInputElement).value;
+    this.userInput = input;
+
+    if (this.userInput.length < 3) {
+      this.validationMessage = "Input must be at least 3 characters long.";
+    } else {
+      this.validationMessage = "";
+    }
+  }
 }
